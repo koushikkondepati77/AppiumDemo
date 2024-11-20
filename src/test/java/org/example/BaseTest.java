@@ -21,7 +21,9 @@ public class BaseTest {
     public void Configureappium() throws URISyntaxException, MalformedURLException {
         UiAutomator2Options options = new UiAutomator2Options();
         options.setDeviceName("koushiPixel3a");
-        options.setApp("C:\\Users\\koush\\IdeaProjects\\AppiumQuickDemo\\src\\test\\java\\resourses\\ApiDemos-debug.apk");
+        //options.setChromedriverExecutable("C:\\Users\\koush\\Downloads\\chromedriver_win32");
+        //options.setApp("C:\\Users\\koush\\IdeaProjects\\AppiumQuickDemo\\src\\test\\java\\resourses\\ApiDemos-debug.apk");
+        options.setApp("C:\\Users\\koush\\IdeaProjects\\AppiumQuickDemo\\src\\test\\java\\resourses\\General-Store.apk");
 
         //from java 20 and above version "URL class" is deprecated, so to avoid any errors we have to use URI("**").toURL()
         driver = new AndroidDriver(new URI("http://127.0.0.1:4723").toURL(), options);
@@ -54,6 +56,11 @@ public class BaseTest {
                 "direction", direction,
                 "percent", 0.75
         ));
+    }
+
+    public Double getFormattedAmount(String amount){
+        Double price = Double.parseDouble(amount.substring(1));
+        return price;
     }
 
     @AfterClass
