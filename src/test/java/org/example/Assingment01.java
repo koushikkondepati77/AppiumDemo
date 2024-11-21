@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class Assingment01 extends BaseTest{
+public class Assingment01 extends AndroidBaseTest{
 
     @Test
     public void clickAndScrollTest() throws InterruptedException {

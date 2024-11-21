@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
-public class ECommerceTC01 extends BaseTest{
+public class ECommerceTC01 extends AndroidBaseTest {
 
     //filling the form and validating the error msg
     @Test

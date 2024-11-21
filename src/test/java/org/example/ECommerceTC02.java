@@ -2,16 +2,14 @@ package org.example;
 
 
 import io.appium.java_client.AppiumBy;
-import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
-public class ECommerceTC02 extends BaseTest{
+public class ECommerceTC02 extends AndroidBaseTest {
 
    //Testcase dynamically selecting product by scanning list based on text
     @Test

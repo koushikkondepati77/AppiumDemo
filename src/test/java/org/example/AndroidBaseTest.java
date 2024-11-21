@@ -3,22 +3,26 @@ package org.example;
 import com.google.common.collect.ImmutableMap;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.options.UiAutomator2Options;
+import io.appium.java_client.service.local.AppiumDriverLocalService;
+import io.appium.java_client.service.local.AppiumServiceBuilder;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.RemoteWebElement;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
+import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URI;
 import java.net.URISyntaxException;
 
-public class BaseTest {
+public class AndroidBaseTest {
 
     public AndroidDriver driver;
 
     @BeforeClass
-    public void Configureappium() throws URISyntaxException, MalformedURLException {
+    public void ConfigureAppium() throws URISyntaxException, MalformedURLException {
+
         UiAutomator2Options options = new UiAutomator2Options();
         options.setDeviceName("koushiPixel3a");
         //options.setChromedriverExecutable("C:\\Users\\koush\\Downloads\\chromedriver_win32");

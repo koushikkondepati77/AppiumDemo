@@ -17,7 +17,7 @@ import java.util.List;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
-public class ECommerceTC04 extends BaseTest{
+public class ECommerceTC04 extends AndroidBaseTest {
 
    //Handling hybrid app [ switching btw native to web ]
     @Test

@@ -8,7 +8,7 @@ import org.openqa.selenium.remote.RemoteWebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class DragDropDemo extends BaseTest {
+public class DragDropDemo extends AndroidBaseTest {
 
     @Test
     public void dragDropTest(){

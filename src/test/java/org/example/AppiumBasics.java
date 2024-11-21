@@ -11,7 +11,7 @@ import java.net.MalformedURLException;
 import java.net.URI;
 import java.net.URISyntaxException;
 
-public class AppiumBasics extends BaseTest{
+public class AppiumBasics extends AndroidBaseTest{
 
     @Test
     public void WifiSettingsName() throws URISyntaxException, MalformedURLException {
